@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_package_name" translatable="false">com.moneytime.android</string>
+
+    <!-- !!!IMPORTANT!!!: do not add "https://" prefix in domain_name string. It is deprecated. -->
+    <string name="domain_name" translatable="false">quizadmin.online</string>
+
+    <!-- You have to use "https://" prefix in dynamic_link string. -->
+    <string name="dynamic_link" translatable="false">https://timemoney.page.link</string>
+
+    <string name="channel_id" translatable="false">default</string>
+    <string name="facebook_app_id" translatable="false">499375764857362</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb499375764857362</string>
+    <string name="g_server_client_id" translatable="false">523605262383-vkael6vjo9saohnglgkm835tvs6754kn.apps.googleusercontent.com</string>
+
+    <bool name="show_translation_dialog">true</bool>
+
+    <string name="instagram_url" translatable="false">abda.llhaljesse</string>
+    <string name="youtube_url" translatable="false">UCpdpBplZldnvWi4zwNxdkWg</string>
+</resources>

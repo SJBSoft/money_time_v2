@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        applicationId "com.moneytime.android"
+        minSdkVersion 19
+        targetSdkVersion 32
+        versionCode 9
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.6.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.facebook.android:facebook-login:13.0.0'
+
+    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation "androidx.browser:browser:1.4.0"
+
+    //Ads
+    implementation 'com.google.android.gms:play-services-ads:21.1.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-base:18.1.0'
+
+    api 'com.tapjoy:tapjoy-android-sdk:12.10.0@aar'
+    implementation 'com.fyber:offerwall-sdk:9.2.2'
+    implementation 'com.adcolony:sdk:4.8.0'
+    implementation 'com.chartboost:chartboost-sdk:8.4.3'
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.3.1'
+    implementation 'com.vungle:publisher-sdk-android:6.11.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.11.0'
+    implementation 'com.unity3d.ads:unity-ads:4.3.0'
+
+    //Applovin mediation
+    implementation 'com.applovin:applovin-sdk:11.4.4'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.applovin.mediation:facebook-adapter:6.11.0.4'
+
+    //Extra
+    implementation 'io.github.aghajari:AXEmojiView:1.5.0'
+    implementation 'io.github.aghajari:AXEmojiView-WhatsAppProvider:1.5.0'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+    implementation 'com.google.android.play:core:1.10.3'
+}
+apply plugin: 'com.google.gms.google-services'

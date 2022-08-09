@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "523605262383",
+    "firebase_url": "https://times-money-default-rtdb.firebaseio.com",
+    "project_id": "times-money",
+    "storage_bucket": "times-money.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523605262383:android:6cbeba1eddde2173a6c6da",
+        "android_client_info": {
+          "package_name": "com.moneytime.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523605262383-d21raiadbnt9v74usrf4e4lapj23fehe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moneytime.android",
+            "certificate_hash": "2ee2ab8ae6b91dbcf9bf91e203069e66481e7dac"
+          }
+        },
+        {
+          "client_id": "523605262383-3rh49f1otufjv0978n5p2gj00lmdqa01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ781-vkV_rvKD9h5AZmy4eOJNjeI7uoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523605262383-3rh49f1otufjv0978n5p2gj00lmdqa01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
